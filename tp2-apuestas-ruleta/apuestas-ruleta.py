@@ -260,3 +260,11 @@ for corrida in range(cantidad_corridas):
 
 grafico_estrategias(corridas, capital_elegido, estrategia_elegida, maximo_tiradas)
 
+
+contador = 0
+for corrida in corridas:
+    contador += 1
+    cantidad_corridas = len(corridas)
+    grafico_frecuencia_relativa(corrida, capital_elegido, estrategia_elegida, maximo_tiradas, contador, cantidad_corridas)
+
+
